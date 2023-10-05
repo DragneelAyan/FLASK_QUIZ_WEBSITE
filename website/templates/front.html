@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block title %}Front{% endblock %}
+{% block content %}
+<body style="background-color:rgb(133, 196, 114)">
+
+<h1><u>MCU Multiple Choice Quiz</u></h1>    
+<p><h4>Please answer the following questions:</h4></p>
+<form action="/front.html">
+    <p>What is the name of Tony Stark's AI system?</p>
+        <div class="mcq-group" style="display:flex; flex-direction:row;">
+            <input type="radio" id="jarvis" name="aisystem" value="jarvis">
+            <label for="html">J.A.R.V.I.S.</label>
+        </div>
+        <div class="mcq-group" style="display:flex; flex-direction:row;">
+            <input type="radio" id="geofrey" name="aisystem" value="geofrey">
+            <label for="css">G.E.O.F.R.E.Y.</label>
+        </div>
+        <div class="mcq-group" style="display:flex; flex-direction:row;">
+            <input type="radio" id="alfred" name="aisystem" value="alfred">
+            <label for="javascript">A.L.F.R.E.D.</label>
+        </div>
+    
+    <br>
+
+    <p>In which fictional country do both the opening scene and the finale of Avengers: Age of Ultron take place?</p>
+    <input type="radio" id="sokovia" name="country" value="sokovia">
+    <label for="html">Sokovia</label><br>
+    <input type="radio" id="genosha" name="country" value="genosha">
+    <label for="css">Genosha</label><br>
+    <input type="radio" id="wakanda" name="country" value="wakanda">
+    <label for="javascript">Wakanda</label>
+
+<p>In Captain Marvel, what kind of alien is Goose?</p>
+<input type="radio" id="chitauri" name="goose" value="chitauri">
+    <label for="html">Chitauri</label><br>
+    <input type="radio" id="flerken" name="goose" value="flerken">
+    <label for="css">Flerken</label><br>
+    <input type="radio" id="sakaaran" name="goose" value="sakaaran">
+    <label for="javascript">Sakaaran</label>
+
+<p>When you are finished, click the "Submit" button to see your score.</p>      
+<input type="submit" value="Submit">
+</form>       
+</body>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %}
+{% block content %}
+    <body style="background-color:rgb(114, 139, 196)">
+        <form method="post">
+            <h1 align="center">Login</h1>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input
+                    type="username"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your Username"
+                />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your Password"
+                />
+            </div>
+        </br>
+            <button type="submit" class="btn btn-primary" align="center">Login</button>
+        </form>
+    </body>
+{% endblock %}
